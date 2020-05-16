@@ -1,10 +1,14 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class Pet extends BaseEntity {
     private PetType petType;
     private Owner owner;
